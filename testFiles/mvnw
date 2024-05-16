@@ -1,0 +1,24 @@
+#!/bin/sh
+# ----------------------------------------------------------------------------
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+
+if [ -z "$MAVEN_SKIP_RC" ]; then
+
+  if [ -f /usr/local/etc/mavenrc ]; then
+    . /usr/local/etc/mavenrc
+  fi
+
+  if [ -f /etc/mavenrc ]; then
+    . /etc/mavenrc
+  fi
+
+  if [ -f "$HOME/.mavenrc" ]; then
+    . "$HOME/.mavenrc"
+  fi
+
+fi

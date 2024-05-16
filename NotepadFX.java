@@ -183,7 +183,7 @@ public class NotepadFX extends Application implements EventHandler<ActionEvent> 
    // Refresh file viewer buttons
    private void redrawFileButtons(boolean allFiles) {
       clearFileViewer();
-      File[] files = new File(".").listFiles();
+      File[] files = new File("testFiles").listFiles();
       if (files != null) {
          for (File file : files) {
 
